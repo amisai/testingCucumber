@@ -6,7 +6,6 @@ import cuke4duke.annotation.I18n.EN.When;
 
 import static junit.framework.Assert.assertEquals;
 
-@SuppressWarnings({"UnusedDeclaration"})
 public class BasicFeature {
 
     private String action;

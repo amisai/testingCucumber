@@ -18,4 +18,12 @@ public class Ninja {
             return Arrays.asList(new String[]{"engage the opponent"});
         }
     }
+
+    public String impact(String target, String opponent, String weapon) {
+        if ("Chuck Norris".equals(opponent)) {
+            return "split";
+        } else {
+            return "not be harmed";
+        }
+    }
 }
