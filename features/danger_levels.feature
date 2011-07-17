@@ -3,11 +3,13 @@ Feature: Skill availability
   I want ninjas to understand the dangers of various opponents
   so that they can engage them in combat more effectively
 
-  Scenario: Samurai are dangeous with katanas, no advanced kicks
+  Background: Allowed skills
     Given the following skills are allowed
       | katana          |
       | karate-kick     |
       | roundhouse-kick |
+
+  Scenario: Samurai are dangeous with katanas, no advanced kicks
     When a ninja faces a samurai
     Then he should expect the following attack techniques
       | technique   | danger |
@@ -15,10 +17,6 @@ Feature: Skill availability
       | karate-kick | low    |
 
   Scenario: Chuch Norris can do anything and is always dangerous
-    Given the following skills are allowed
-      | katana          |
-      | karate-kick     |
-      | roundhouse-kick |
     When a ninja faces Chuck Norris
     Then he should expect the following attack techniques
       | technique       | danger  |
