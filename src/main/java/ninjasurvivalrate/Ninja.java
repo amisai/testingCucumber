@@ -15,7 +15,11 @@ public class Ninja {
         if ("Chuck Norris".equals(opponent)) {
             return Arrays.asList(new String[]{"run for his life"});
         } else {
-            return Arrays.asList(new String[]{"engage the opponent"});
+            if ("third".equals(belt)) {
+                return Arrays.asList(new String[]{"engage the opponent"});
+            } else {
+                return Arrays.asList(new String[]{"run for his life"});
+            }
         }
     }
 
